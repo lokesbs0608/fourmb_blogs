@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  p{
+    height: 76px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+  }
+}
+.container:hover  {
+    transform: scale(0.95);
+    transition: transform .5s ease-in-out;
+  }
+
+  .skelton_container{
+    margin: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 100%;
+  }

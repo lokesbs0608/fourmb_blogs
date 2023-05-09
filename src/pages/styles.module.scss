@@ -1,0 +1,29 @@
+.image_container {
+  border-radius: 10px;
+  height: 400px;
+  overflow: hidden;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.sub_container {
+  height: calc(100vh - 5rem);
+  overflow-y: scroll;
+}
+
+.realated_container {
+  height: calc(100vh - 5rem);
+  overflow-y: scroll;
+}
+
+  @media (max-width: 768px) {
+    .sub_container, .realated_container {
+      height: auto;
+      overflow-y: auto;
+    }
+  }

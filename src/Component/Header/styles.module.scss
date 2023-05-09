@@ -1,0 +1,30 @@
+.container {
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  background-color: aliceblue;
+}
+.navBar_Container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.nav_bar_text {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.nav_bar_text:hover{
+    color: rgb(176, 15, 15);
+    span{
+        color: #000;
+        font-weight: normal;
+    }
+}
