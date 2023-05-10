@@ -1,15 +1,16 @@
 import React from "react";
-import FourMbIcon from "../assets/My project-3 (1).png";
+import FourMbIcon from "../../assets/My project-3 (1).png";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import ListingCard from "@/Component/ListingCard";
 import Skeleton from "@mui/material/Skeleton";
 import VideoComponent from "@/Component/VideoComponent";
 
-const BlogPage = () => {
+const TechnologyBlogPage = () => {
   const handleArticleChange = () => {};
   return (
     <div className="row mx-auto">
+        technology
       <div className={`${styles.sub_container} col-lg-8 col-sm-6 col-md-8 `}>
         <div className={styles.image_container}>
           <Image
@@ -93,4 +94,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default TechnologyBlogPage;

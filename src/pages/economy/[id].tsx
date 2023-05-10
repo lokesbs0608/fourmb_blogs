@@ -1,5 +1,5 @@
 import React from "react";
-import FourMbIcon from "../assets/My project-3 (1).png";
+import FourMbIcon from "../../assets/My project-3 (1).png";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import ListingCard from "@/Component/ListingCard";
