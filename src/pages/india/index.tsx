@@ -6,7 +6,7 @@ export default function IndiaPage() {
   const router = useRouter();
 
   const handleNaviagtion = () => {
-    router.push("/movies/2");
+    router.push("/india/2");
   };
   return (
     <div
@@ -19,7 +19,7 @@ export default function IndiaPage() {
       className=" mx-3"
       
     >
-        MoviesPage
+        India
       {[1, 2, 3, 4, 5, 5, 67, , 88, 9, 9, 99, 9, 99].map((item, index) => {
         return <ListingCard key={index} />;
       })}
