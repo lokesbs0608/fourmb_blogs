@@ -22,7 +22,10 @@ const HeaderComponent = () => {
   const handleNavigation = (path: string) => {
     router.push(path);
   };
-
+  const checkRouting = (path: string) => {
+    const value = router.pathname.includes(path);
+    return value;
+  };
   return (
     <div className={styles.container}>
       <div className="d-flex align-items-center justify-content-start gap-1 ">
@@ -48,11 +51,15 @@ const HeaderComponent = () => {
                 onClick={() => handleNavigation(item?.path)}
                 className={styles.nav_bar_text}
                 key={index}
+                style={{
+                  color: checkRouting(item?.path) ? "rgb(176, 15, 15)" : "",
+                }}
               >
                 {item?.name}{" "}
                 <span
                   hidden={index === navObj.length - 1}
                   className={styles.separator}
+                  style={{ color: "#000" }}
                 >
                   |
                 </span>

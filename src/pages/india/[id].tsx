@@ -85,7 +85,7 @@ const BlogPage = () => {
           }}
         >
           {[1, 2, 3, 4, 5, 5, 67, , 88, 9, 9, 99, 9, 99].map((item, index) => {
-            return <ListingCard key={index} />;
+            return <ListingCard key={index} data={undefined} />;
           })}
         </div>
       </div>
